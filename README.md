@@ -67,7 +67,7 @@ This Python script attempts to recover plaintext passwords by "brute-forcing" th
 It supports various hashing algorithms and is useful for educational purposes, security testing, and understanding password vulnerabilities.
 
 
-🚀 Features
+🔍 Features
 
 - Supports common hashing algorithms (`sha256`, `md5`, `sha1`, etc.)
 - Reads and checks each word from a wordlist file
@@ -107,3 +107,47 @@ python password_cracker.py 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd  word
 - [INFO] Checked 2000 passwords so far...
 
 - [SUCCESS] Password found: 'password123' (Line 2035)
+
+
+
+3. Simple XSS Vulnerability Detector
+   
+This Python script is designed to detect Cross-Site Scripting (XSS) vulnerabilities in web applications by testing both GET and POST parameters with common XSS payloads.
+It helps identify potential security flaws where user input might be improperly sanitized.
+
+🔍 Features
+- Tests both GET and POST request parameters
+- Uses a variety of common XSS payloads
+- Provides detailed output of vulnerable parameters
+- Simple command-line interface 
+
+🧰 Requirements
+- Python 3.x
+- `requests` library (install with `pip install requests`)
+
+⚙️ Usage
+- Run the script:  `python Simple_XSS_Vulnerability_Detector.py` 
+- Enter the target URL when prompted (include parameters for GET testing)
+- Select the HTTP method to test (GET or POST)
+- For POST requests, you'll be prompted to enter parameters in key=value format
+
+🧪 Example
+
+
+== Simple XSS Vulnerability Detector ===
+
+- Enter target URL (include parameters for GET testing): http://example.com/search?q=test
+- HTTP method to test (GET or POST): GET
+
+- [*] Testing GET parameters for XSS injection...
+
+- Testing parameter: q
+-   [!] Potential XSS vulnerability detected for parameter 'q' with payload:
+      <script>alert('XSS')</script>
+
+- Summary of potential vulnerabilities found:
+-  Parameter: q
+-  Payload: <script>alert('XSS')</script>
+-  URL: http://example.com/search?q=test<script>alert('XSS')</script>
+
+=== Test completed ===
