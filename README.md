@@ -1,7 +1,7 @@
 
 # 🔒 Cybersecurity Python Projects 🚀
 
-This collection contains **7 simple scripts** for educational and security testing purposes. Each script focuses on a specific area in cybersecurity — from web security scanning to password strength and brute-force testing.
+This collection contains ** 9 simple scripts** for educational and security testing purposes. Each script focuses on a specific area in cybersecurity — from web security scanning to password strength and brute-force testing.
 
 ---
 
@@ -301,7 +301,60 @@ asldkfjg
 ...
 ```
 
+ ## 9️⃣🔐 Simple Password Hasher (C)
+**Description:**
+This project is a simple C program that demonstrates how to hash and verify passwords using the **SHA-256** algorithm from the OpenSSL library. It simulates a basic password authentication mechanism.
 
+---
+
+###📜 Features
+
+- Hashes user input using **SHA-256**
+- Compares hashed input against a stored hash (for password: `secret123`)
+- Provides simple feedback: `Access Granted ✅` or `Access Denied ❌`
+- Uses OpenSSL's cryptographic functions
+
+---
+
+### 🧰 Requirements
+
+- GCC or any standard C compiler
+- OpenSSL development libraries (`libssl-dev` or equivalent)
+
+---
+
+### 🏗️ Build Instructions
+
+To compile the program, use:
+
+```bash
+gcc SIMPLE_PASSWORD_HASHER.c -o password_hasher -lssl -lcrypto
+```
+
+---
+
+### 🚀 Usage
+
+Run the program after compiling:
+
+```bash
+./password_hasher
+```
+
+Then enter a password when prompted. The program will hash your input and compare it to a stored hash (for `"secret123"`).
+
+---
+
+### 🧪 Sample Output
+
+```
+Enter your password: secret123
+Hashed password: 2bb80d537b1da3e38bd30361aa855686bde0ba28a5a...
+
+Access Granted ✅
+```
+
+---
 
 
 
