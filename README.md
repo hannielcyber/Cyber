@@ -253,6 +253,81 @@ python KEYLOGGER.py
 
 ---
 
+
+## 8️⃣ 🔐 Password List Generator
+**Description:**  
+This project is a simple Python script designed to generate a large list of random lowercase passwords. It is useful for testing password cracking tools, brute-force simulations, or other cybersecurity-related experiments.
+
+---
+
+### 📜 Features
+
+- ✅ Generates **1 million** random passwords  
+- ✅ Each password:
+  - Is **8 characters** long  
+  - Consists of **lowercase letters only** (`a-z`)  
+- ✅ Outputs the list to a file named `password.lst`
+
+---
+
+### 🧰 Requirements
+
+- Python **3.x**  
+- No external libraries needed (uses built-in `random` and `string` modules)
+
+---
+
+### 🏃‍♂️ Usage
+
+1. Clone or download this project.
+2. Run the script using Python:
+
+   ```bash
+   python PASSWORD\ LIST\ GENERATOR.py
+   ```
+
+3. A file named `password.lst` will be created in the same directory containing **1 million** randomly generated passwords.
+
+---
+
+### 📁 Output Example
+
+Each line in `password.lst` contains one 8-character password. Example:
+
+```
+qweorplk
+zmxnvcas
+asldkfjg
+...
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## ⚠️ DISCLAIMER
 
 For educational & ethical use only. Use responsibly with permission!
