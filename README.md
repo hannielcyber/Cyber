@@ -303,6 +303,9 @@ asldkfjg
 
  ## 9️⃣🔐 Simple Password Hasher (C)
 **Description:**
+
+
+
 This project is a simple C program that demonstrates how to hash and verify passwords using the **SHA-256** algorithm from the OpenSSL library. It simulates a basic password authentication mechanism.
 
 ---
@@ -357,6 +360,10 @@ Access Granted ✅
 ---
 
 ## 🔟  🛡️ File Integrity Checker
+**Description:**
+
+
+
 
 A lightweight Python script to monitor changes in any file by checking its SHA-256 hash over time. Useful for detecting unauthorized modifications, ensuring data integrity, and protecting against tampering.
 
@@ -402,7 +409,7 @@ python FILE\ INTEGRITY\ CHECKER.py
 
 4. You'll see regular updates in the terminal. If the file is modified, the script will alert you.
 
-### 📝 Example Output
+### 🧪 Sample Output
 
 ```
 Monitoring path/to/your/file.txt. Initial hash: 1234abcd...
@@ -419,6 +426,50 @@ Current hash: 5678efgh...
 
 
 
+## 1️⃣1️⃣ 🔍 Go Port Scanner
+**Description:**
+
+
+
+
+A simple and fast port scanner written in Go. Useful for learning basic network scanning concepts and Go's concurrency model.
+
+### 📦 Features
+
+- Scans a given IP or hostname
+- Supports a custom range of ports
+- Displays open ports only
+- Fast scanning using goroutines
+
+### 📦 Requirements
+- Go 1.13+
+
+### 🚀 Usage
+
+
+1.  Run the scanner
+
+```bash
+go run port_scanner.go
+```
+
+ 2.  📥Input
+
+You will be prompted to enter:
+- Hostname or IP (e.g., `scanme.nmap.org`)
+- Start port (e.g., `1`)
+- End port (e.g., `1024`)
+
+### 🧪 Sample Output
+
+```bash
+Enter hostname or IP to scan: scanme.nmap.org
+Enter start port: 20
+Enter end port: 100
+Open ports:
+ - 22
+ - 80
+```
 
 
 
