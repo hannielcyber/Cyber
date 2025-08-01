@@ -1,7 +1,7 @@
 
 # 🔒 Cybersecurity Python Projects 🚀
 
-This collection contains ** 9 simple scripts** for educational and security testing purposes. Each script focuses on a specific area in cybersecurity — from web security scanning to password strength and brute-force testing.
+This collection contains ** 10 simple scripts** for educational and security testing purposes. Each script focuses on a specific area in cybersecurity — from web security scanning to password strength and brute-force testing.
 
 ---
 
@@ -307,7 +307,7 @@ This project is a simple C program that demonstrates how to hash and verify pass
 
 ---
 
-###📜 Features
+### 📜 Features
 
 - Hashes user input using **SHA-256**
 - Compares hashed input against a stored hash (for password: `secret123`)
@@ -355,6 +355,67 @@ Access Granted ✅
 ```
 
 ---
+
+## 🔟  🛡️ File Integrity Checker
+
+A lightweight Python script to monitor changes in any file by checking its SHA-256 hash over time. Useful for detecting unauthorized modifications, ensuring data integrity, and protecting against tampering.
+
+## 📂 Overview
+
+This script continuously monitors a specified file and alerts you when its content changes by comparing its cryptographic hash.
+
+### 🔧 Features
+
+- Calculates SHA-256 hash of any file
+- Continuously monitors the file at regular intervals
+- Sends an alert if a change is detected
+- Simple and efficient, no external dependencies
+
+### 🧪 How It Works
+
+1. The script computes the SHA-256 hash of the file initially.
+2. At a defined interval (default: 10 seconds), it recalculates the hash.
+3. If the new hash differs from the original, a warning is triggered.
+
+### 📦 Requirements
+
+- Python 3.x
+
+No additional libraries are required — it uses the built-in `hashlib`, `os`, and `time` modules.
+
+### 🚀 Usage
+
+1. Clone or download this repository.
+2. Replace the placeholder path with the file you want to monitor:
+
+```python
+if __name__ == "__main__":
+    file_to_monitor = "path/to/your/file.txt"  # Update this line
+    monitor_file(file_to_monitor)
+```
+
+3. Run the script:
+
+```bash
+python FILE\ INTEGRITY\ CHECKER.py
+```
+
+4. You'll see regular updates in the terminal. If the file is modified, the script will alert you.
+
+### 📝 Example Output
+
+```
+Monitoring path/to/your/file.txt. Initial hash: 1234abcd...
+No changes detected. Current hash: 1234abcd...
+ALERT! File path/to/your/file.txt has been modified.
+Original hash: 1234abcd...
+Current hash: 5678efgh...
+```
+
+### 📌 Notes
+
+- This script halts after detecting a single change. You can modify it to continue monitoring if needed.
+- Ensure the file path is correct and accessible by the script.
 
 
 
